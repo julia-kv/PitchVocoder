@@ -1,10 +1,9 @@
 #!/bin/bash
 
-python -m venv .venv
+python3 -m venv .venv
 
 source .venv/bin/activate
 
 pip install -r requirements.txt
 
-python stretch_wav.py
-
+python3 stretch_wav.py $1 $2 $3

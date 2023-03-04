@@ -1,5 +1,3 @@
-import logging
-
 import numpy as np
 import librosa
 
@@ -52,7 +50,3 @@ def vocoder_algorithm(wav: np.ndarray, compression: float) -> np.ndarray:
     transformed_wav = librosa.istft(transformed_wav, hop_length=HOP_OUT)
 
     return transformed_wav
-
-
-if __name__ == '__main__':
-    logging.info('In vocoder.py')
